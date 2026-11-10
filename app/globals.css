@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --theme-primary: #5b93c8;
+    --theme-accent: #5bc8ac;
+    --theme-bg: #f6f9fc;
+    --theme-text: #0f172a;
+  }
+
+  body {
+    font-family: sans-serif;
+    background-color: #f6f9fc;
+    color: #0f172a;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  code, pre, .font-mono, .font-sans {
+    font-family: inherit;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Yondec.com signature flanked section headline — solid line, no gradient */
+.yondec-headline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.yondec-headline::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #cbd5e1;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

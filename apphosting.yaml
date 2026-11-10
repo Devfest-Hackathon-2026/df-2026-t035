@@ -1,0 +1,24 @@
+# Firebase App Hosting configuration for Preプレ (Next.js App Router)
+runConfig:
+  minInstances: 0
+  maxInstances: 2
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+
+# ここでViteのビルドとExpressサーバーの起動コマンドを明示
+scripts:
+  buildCommand: npm run build
+  runCommand: npm run start
+
+env:
+  - variable: NODE_ENV
+    value: production
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: GEMINI_API_KEY
+    secret: GEMINI_API_KEY
+    availability:
+      - BUILD
+      - RUNTIME

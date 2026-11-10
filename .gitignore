@@ -24,6 +24,8 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+coverage/
+next-env.d.ts
 
 # OS とエディタ
 .DS_Store

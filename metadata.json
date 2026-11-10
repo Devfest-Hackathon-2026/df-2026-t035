@@ -1,0 +1,11 @@
+{
+  "name": "AI プレゼン練習アプリ",
+  "description": "3Dアバター聴衆の前で実践的なプレゼン練習ができるAI対話型シミュレーション。リアルタイム感情分析、挙手・指名制質疑応答、タイムライン分析レポート。",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
